@@ -28,7 +28,7 @@ acronym() {
 
 wikipedia() {
 	what="$*"
-	wikipedia2text "$what" | mailx -s "wikipedia article: $what" $USER
+	wikipedia2text "$what" | mailx -s "wikipedia article: $what" "$USER"
 	echo wikipedia article about "$what" sent to mailbox
 }
 
